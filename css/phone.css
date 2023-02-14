@@ -1,0 +1,226 @@
+@media (max-width: 768px) {
+  img {
+    object-fit: cover;
+  }
+
+  main {
+    width: 100%;
+  }
+  /* header */
+  #logo {
+    /* Logo site */
+    text-align: center;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-bottom: solid 2px #f2f2f2;
+  }
+
+  nav img {
+    width: 20%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+  }
+
+  nav ul li {
+    padding: 20px;
+    width: 50%;
+  }
+
+  nav ul li:hover {
+    border-bottom: solid 2px #0065fc;
+  }
+  nav a {
+    padding-bottom: 10px;
+  }
+
+  nav a:hover {
+    border-top: none;
+  }
+
+  /*  End header  */
+
+  /* Filtre */
+  #filtres h3 {
+    padding-left: 20px;
+  }
+
+  #section_filtres h1 {
+    padding-left: 20px;
+    font-size: 24px;
+  }
+
+  #section_filtres h2 {
+    padding-left: 20px;
+  }
+
+  #searchbar {
+    padding-top: 30px; /* Espace entre les titres et la barre de recherche */
+    padding-left: 25px;
+  }
+
+  #titre_button {
+    display: none; /* Titre recherche */
+  }
+
+  .fa.fa-search {
+    display: contents;
+  }
+  /* -------------------------------------------------------------------------------- */
+  /* div (2) Les filtres de recherche */
+
+  /* -------------------------------------------------------------------------------- */
+  /* balise <i> + du texte */
+
+  #section_filtres_end {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  #section_filtres_end h4 {
+    font-size: 16px;
+  }
+
+  /* End filtre */
+
+  /* Parti populaire */
+
+  #section_article_aside aside {
+    /* Background Grey*/
+    border-radius: 0%;
+    height: auto;
+    width: 100%;
+  }
+  /* End Background Grey*/
+
+  #aside_bloc_all_annonces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* End Parti populaire */
+
+  .bloc_aside_solo {
+    /* Bloc d'annonces individuel */
+    width: 85%;
+  }
+
+  /* Filtre */
+  #filtres {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #filtres h3 {
+    padding-bottom: 15px;
+    margin-right: 80%;
+  }
+
+  .filtres_bloc {
+    /* espace entre les blocs */
+    margin: 5px;
+  }
+
+  .filtres_bloc i {
+    background: transparent;
+  }
+
+  #section_filtres_end {
+    padding-bottom: 30px;
+  }
+  /* End Filtre*/
+
+  /* Herbergment à Marseille */
+  .article_image img {
+    margin: 0;
+    width: 100%;
+  }
+
+  #section_article_aside {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #section_article_aside article {
+    border-radius: 0%;
+    width: 100%;
+    background-color: white;
+  }
+
+  #bloc_annonces_total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloc_annonce_solo {
+    /* Bloc d'annonces individuel */
+    width: 85%;
+  }
+
+  #button_article {
+    /* h3 hérbérgement à Marseille "Afficher plus"*/
+    display: none;
+  }
+  /* End Herbergment à Marseille */
+
+  /* Activités à Marseille */
+  article h1 {
+    padding-left: 20px;
+  }
+
+  /* Toutes les cartes */
+  #activity_article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* End Toutes les cartes */
+
+  .longue_carte {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* border-radius blanc */
+  .activites_longue_carte {
+    height: 160px;
+  }
+  /* End border-radius blanc */
+
+  /* Img longue cards */
+  .activites_longue_carte img {
+    height: 120px;
+  }
+  /* End img longue cards */
+  /* End Activités à Marseille */
+
+  /* Footer */
+  #footer-bg {
+    height: 600px;
+    width: 100%;
+    margin: 0%;
+  }
+
+  .contenair-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .line_hover_footer:hover {
+    border-bottom: solid 2px #0065fc; /* ligne bleu que pour la nav footer au survole */
+  }
+  /* End footer */
+}

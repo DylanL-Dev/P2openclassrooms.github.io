@@ -1,0 +1,80 @@
+@media (max-width: 992px) {
+  img {
+    object-fit: cover;
+  }
+
+  /* article hébérgement */
+  /* Ensemble de Hébergements à Marseille */
+  #section_article_aside article {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  /* End Ensemble de Hébergements à Marseille */
+  /* End article hébérgement */
+
+  /* aside les plus populaires */
+
+  #section_article_aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #aside_bloc_all_annonces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  /* titre aside */
+  #aside_titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+  }
+  /* End titre aside */
+
+  /* Bloc d'annonces individuel */
+  .bloc_aside_solo {
+    width: 30%;
+  }
+  /* End Bloc d'annonces individuel */
+
+  #section_article_aside aside {
+    width: 100%;
+    height: 278px;
+  }
+
+  aside {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  /* End aside les plus populaires */
+
+  /* Activités à Marseille */
+  .article-activités_a_marseille {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  /* End Activités à Marseille */
+
+  /* footer */
+
+  #footer-bg {
+    width: 95%;
+    height: 250px;
+  }
+
+  a:hover {
+    color: #0065fc;
+  }
+
+  .line_hover_footer:hover {
+    border-bottom: solid 2px #0065fc; /* ligne bleu que pour la nav footer au survole */
+  }
+  /* End Footer */
+}

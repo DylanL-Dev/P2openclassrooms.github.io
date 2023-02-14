@@ -1,0 +1,521 @@
+/* ------------------------------ CSS dekstop ------------------------------- */
+/* ---- Général ---- */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* /* Prend en compte toutes les balises */ {
+  box-sizing: border-box; /* Prend en compte les margin et padding dans le cacule de la largeur et la hauteur d'un élément */
+  margin: 0; /* Pour retirer l'espace automatique du navigateur */
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: auto; /* Centrer la page */
+  max-width: 1400px;
+}
+
+img {
+  object-fit: cover; /* Adapte l'élément à son conteneur par rapport à sa largeur et sa hauteur */
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+/* ---- Section par section ---- */
+/* -- header -- */
+nav {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img /* Logo du site */ {
+  width: 40%;
+  padding-top: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-top: 9px;
+}
+
+nav li /* Balise <a> dans le header */ {
+  color: black;
+
+  padding-right: 30px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding-right: 40px; /* Espace entre le texte et le bord de page */
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav a:hover /* Quand on survole le texte */ {
+  color: #0065fc;
+  padding-top: 30px;
+  border-top: 2px solid #0065fc;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* title */
+
+#titre {
+  padding-left: 5%;
+}
+
+/* end title */
+
+/* -------------------------------------------------------------------------------- */
+/* --Section n°1: Filtres-- */
+#section_filtres h1 {
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+#section_filtres h2 {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+/* -------------------------------------------------------------------------------- */
+/* div (1) La barre de recherche */
+#searchbar {
+  display: flex;
+  height: auto;
+  padding-top: 10px; /* Espace entre les titres et la barre de recherche */
+}
+
+#searchbar .fa-solid.fa-location-dot /* Icône avant la barre de recherche */ {
+  padding: 15px; /* Espace autour de l'icône */
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #f2f2f2;
+  border: 0.5px solid #f2f2f2;
+}
+
+#searchbar input /* Barre de recherche */ {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  border: 2px solid #f2f2f2;
+}
+
+input::placeholder {
+  color: black;
+}
+
+#searchbar input:focus /* Barre de recherche après avoir cliqué */ {
+  outline-style: none; /* Retire les bordures noir au clic */
+}
+
+#rechercher_button /* Le boutton recherche */ {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: #0065fc;
+  padding: 15px; /* Espace autour du texte */
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid #f2f2f2;
+}
+
+.fa.fa-search {
+  display: none;
+}
+/* -------------------------------------------------------------------------------- */
+/* div (2) Les filtres de recherche */
+#filtres /* Bloc complet */ {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#filtres h3 {
+  font-size: 18px;
+}
+
+#liste_filtres {
+  display: flex; /* Aligne les filtres */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filtres_bloc /* bloc individuel (filtres) */ {
+  display: flex; /* Aligme l'icône avec le texte */
+  align-items: center;
+  height: 43px;
+  border-radius: 20px;
+  margin-left: 20px; /* Espace entres les filtres */
+  padding-right: 10px;
+  border: 2px solid #f2f2f2;
+}
+
+.filtres_bloc i /* Icône <i> des filtres */ {
+  position: relative;
+  right: 3px;
+  bottom: 2px;
+  margin: auto;
+  margin-right: 10px;
+  width: 43px;
+  height: 43px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ccffff;
+  color: #0065fc;
+  line-height: 40px; /* Pour centrer l'icône */
+}
+
+#filtres li /* Texte des filtres */ {
+  font-weight: bold;
+  height: 30px;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 30px; /* Pour centrer le texte */
+}
+
+#filtres a {
+  text-decoration: none;
+  color: black;
+}
+
+#filtres a:hover {
+  text-decoration: none;
+  color: #0065fc;
+}
+/* -------------------------------------------------------------------------------- */
+/* balise <i> + du texte */
+#section_filtres_end {
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+#section_filtres_end i {
+  color: #0065fc;
+  width: 20px; /* ------------------------------ */
+  height: 20px;
+  border: 2px solid black; /* bordure du cercle */
+  border-radius: 10px;
+  border-color: #f2f2f2; /* ------------------- */
+  align-self: center; /* Centrer le cercle */
+  text-align: center; /* Centre l'icône horizontalement */
+  margin-right: 10px; /* Espace entre le cercle et le texte */
+  line-height: 15px; /* Pour centrer l'icône */
+}
+
+#section_filtres_end h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Section n°2: Article-Aside */
+#section_article_aside /* Parent de toute la section */ {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------- Article --------- */
+#section_article_aside article /* Ensemble de Hébergements à Marseille */ {
+  width: 67.5%;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+#hebergement /* Titre de l'article */ {
+  width: 95%;
+  margin: auto;
+  font-size: 22px;
+  font-weight: bolder;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#bloc_annonces_total /* Bloc des annonces (l'ensemble) */ {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  justify-content: space-around;
+}
+
+.bloc_annonce_solo /* Bloc des annonces individuel */ {
+  width: 29%;
+  min-width: 160px;
+  height: 170px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/* ---- Images des annonces (Article) ---- */
+.article_image img {
+  display: block;
+  margin: auto;
+  width: 95%;
+  height: 90px;
+  padding-top: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/*----------------------------------------*/
+/* ---- Texte des annonces ---- */
+.annonce_texte {
+  width: 90%;
+  margin: auto;
+  color: black;
+  text-decoration: none;
+}
+
+.annonce_texte h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.annonce_texte p {
+  font-size: 13px;
+  padding-top: 5px;
+}
+/*----------------------------------------*/
+/* ---- La notation ---- */
+.stars_article {
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.stars_article .fa-star {
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.stars_article .fa-star.gold {
+  color: #0065fc;
+}
+/*----------------------------------------*/
+/* ---- "Afficher plus" ---- */
+#button_article /* "Afficher plus" en bas de "Hébergement à Marseille" */ {
+  width: 94%;
+  margin: auto;
+  font-size: 14px;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+#button_article a {
+  text-decoration: none;
+  color: black;
+}
+/* -------------------------------------------------------------------------------- */
+/* --------- Aside les plus populaire --------- */
+#section_article_aside aside /* Parent d'aside */ {
+  width: 30%;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+#aside_titre /* Titre + chart */ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#aside_titre h1 /* Titre seulement */ {
+  font-size: 22px;
+}
+
+#aside_titre i /* chart */ {
+  line-height: 50px;
+  padding-right: 5px;
+  color: #0065fc;
+}
+
+#aside_bloc_all_annonces /* Bloc de toutes les annonces */ {
+  width: 90%;
+  margin: auto;
+}
+
+.bloc_aside_solo /* Bloc d'annonces individuel */ {
+  display: flex;
+  height: 120px;
+  border-radius: 15px;
+  padding: 3px;
+  margin-bottom: 20px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/*----------------------------------------*/
+/* ---- Images des annonces (Aside) ---- */
+.aside_image {
+  width: 40%;
+  height: 115px;
+  margin: auto;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.aside_image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+/* --------------------------------------------------- */
+/* ---- Texte des annonces ---- */
+.bloc_aside_solo a {
+  display: flex; /* étoiles de notation */
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+}
+
+.aside_texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 85%;
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.bloc_aside_solo h2 {
+  margin: auto;
+  font-size: 14px;
+}
+
+.bloc_aside_solo p {
+  margin: auto;
+  padding-top: 5px;
+  font-size: 13px;
+}
+/* --------------------------------------------------- */
+/* ---- étoiles de notation ---- */
+.stars_aside {
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.stars_aside .fa-star {
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.stars_aside .fa-star.gold {
+  color: #0065fc;
+}
+/* -------------------------------------------------------------------------------- */
+/* ---- Activity-Article ---- */
+#activity_article /* Toutes les cartes */ {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+article h1 /* Titre de l'article */ {
+  padding-top: 20px;
+  font-size: 22px;
+}
+/*----------------------------------------*/
+/* ---- Grande carte (activity_long) ---- */
+.longue_carte {
+  width: 22.5%;
+}
+
+.activites_longue_carte {
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+/*----------------------------------------*/
+/* ---- Image: Grande carte (activity_long) ---- */
+.activites_longue_carte img {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/*----------------------------------------*/
+/* ---- Texte: Grande carte (activity_long) ---- */
+.activites_longue_carte h2 {
+  font-size: 13px;
+  height: 50px;
+  line-height: 40px;
+  padding-left: 15px;
+  color: black;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---- Footer ---- */
+
+#footer-bg {
+  height: 225px;
+  width: 95%;
+  top: 0px;
+  border-radius: 0px;
+  background: #d3d0d0e7;
+  margin-left: 28px;
+}
+
+.contenair-f {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-col {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 23px;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #0065fc;
+}
+
+.line_hover_footer:hover {
+  border-bottom: solid 2px #0065fc; /* ligne bleu que pour la nav footer au survole */
+}
