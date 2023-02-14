@@ -113,6 +113,7 @@ nav a:hover /* Quand on survole le texte */ {
 
 input::placeholder {
   color: black;
+  font-size: small;
 }
 
 #searchbar input:focus /* Barre de recherche après avoir cliqué */ {
