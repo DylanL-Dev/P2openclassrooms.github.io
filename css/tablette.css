@@ -3,6 +3,13 @@
     object-fit: cover;
   }
 
+  /* Filtre */
+
+  .filtres_bloc:hover {
+    transform: none;
+  }
+  /*End Filtre*/
+
   /* article hébérgement */
   /* Ensemble de Hébergements à Marseille */
   #section_article_aside article {
@@ -53,12 +60,26 @@
     border-radius: 15px;
   }
 
+  .bloc_aside_solo:hover {
+    transform: none;
+  }
   /* End aside les plus populaires */
 
   /* Activités à Marseille */
   .article-activités_a_marseille {
     width: 100%;
     padding-bottom: 10%;
+  }
+
+  .activites_longue_carte:hover {
+    /*transition*/
+    filter: blur(0);
+    opacity: 1;
+    transform: none;
+  }
+
+  .bloc_annonce_solo:hover {
+    transform: none;
   }
   /* End Activités à Marseille */
 

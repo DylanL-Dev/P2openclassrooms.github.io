@@ -131,6 +131,10 @@
     margin: 5px;
   }
 
+  .filtres_bloc:hover {
+    transform: none;
+  }
+
   .filtres_bloc i {
     background: transparent;
   }
@@ -169,6 +173,14 @@
     width: 85%;
   }
 
+  .bloc_annonce_solo:hover {
+    transform: none;
+  }
+
+  .bloc_aside_solo:hover {
+    transform: none;
+  }
+
   #button_article {
     /* h3 hérbérgement à Marseille "Afficher plus"*/
     display: none;
@@ -196,6 +208,11 @@
   /* border-radius blanc */
   .activites_longue_carte {
     height: 160px;
+    filter: blur(0);
+    opacity: 1;
+  }
+  .activites_longue_carte:hover {
+    transform: scale(1);
   }
   /* End border-radius blanc */
 
