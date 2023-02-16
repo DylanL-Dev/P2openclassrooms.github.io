@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* définir la hauteur pour centrer verticalement */
+}
+
+.logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding-left: 75px;
+  margin-bottom: 20px;
+  animation: logo 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.progress-bar-container {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: blue;
+  animation: progress 4s ease-out;
+  border-radius: 10px 10px 10px 10px;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+  70% {
+    width: 80%;
+    opacity: 0.33;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  70% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
