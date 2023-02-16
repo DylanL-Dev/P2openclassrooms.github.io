@@ -63,7 +63,6 @@ nav a:hover /* Quand on survole le texte */ {
   border-top: 2px solid #0065fc;
   padding-left: 10px;
   padding-right: 10px;
-  transform: scale(1.15);
 }
 
 /* title */
@@ -161,12 +160,14 @@ input::placeholder {
   margin-left: 20px; /* Espace entres les filtres */
   padding-right: 10px;
   border: 2px solid #f2f2f2;
+  /*transition*/
   transform: scale(1);
   transition-property: all;
   transition-duration: 400ms;
 }
 
 .filtres_bloc:hover {
+  /*transition*/
   transform: scale(1.12);
 }
 
@@ -271,13 +272,14 @@ input::placeholder {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
+  /*transition*/
   transform: scale(1);
   transition-property: all;
   transition-duration: 400ms;
 }
 
 .bloc_annonce_solo:hover {
+  /*transition*/
   transform: scale(1.12);
 }
 
@@ -387,12 +389,14 @@ input::placeholder {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  /*transition*/
   transform: scale(1);
   transition-property: all;
   transition-duration: 400ms;
 }
 
 .bloc_aside_solo:hover {
+  /*transition*/
   transform: scale(1.08);
 }
 /*----------------------------------------*/
@@ -482,12 +486,14 @@ article h1 /* Titre de l'article */ {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   opacity: 0.75;
   filter: blur(2.5px);
+  /*transition*/
   transform: scale(1);
   transition-property: all;
   transition-duration: 400ms;
 }
 
 .activites_longue_carte:hover {
+  /*transition*/
   filter: blur(0);
   opacity: 1;
   transform: scale(1.07);
