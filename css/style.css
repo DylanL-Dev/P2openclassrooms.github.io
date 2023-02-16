@@ -28,15 +28,12 @@ body {
   height: 100vh; /* définir la hauteur pour centrer verticalement */
 }
 
-.logo_loader {
+.logo_loader img {
+  width: 75%;
+  padding-left: 45px;
   margin-bottom: 20px;
   animation: logo 4s ease-out;
   animation-fill-mode: forwards;
-}
-
-img {
-  width: 75%;
-padding-left: 45px;
 }
 
 .progress-bar-container {
@@ -60,7 +57,6 @@ padding-left: 45px;
   0% {
     background-color: white;
     visibility: visible;
-
   }
 
   100% {
@@ -652,4 +648,10 @@ a:hover {
 
 .line_hover_footer:hover {
   border-bottom: solid 2px #0065fc; /* ligne bleu que pour la nav footer au survole */
+}
+
+@media (max-width: 1920px) {
+  /*--------------------------------Loader--------------------------------------*/
+
+  /*--------------------------------END Loader--------------------------------------*/
 }
