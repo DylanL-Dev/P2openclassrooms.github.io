@@ -240,4 +240,39 @@
     border-bottom: solid 2px #0065fc; /* ligne bleu que pour la nav footer au survole */
   }
   /* End footer */
+
+  /*--------------------------------Loader--------------------------------------*/
+
+  .logo_loader img {
+    width: 65%;
+    margin-left: 15%;
+  }
+
+  .progress-bar {
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: blue;
+    animation: progress 4s ease-out;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0%;
+      opacity: 1;
+    }
+    70% {
+      width: 65%;
+      opacity: 0.5;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      width: 90%;
+      opacity: 0;
+    }
+  }
+
+  /*--------------------------------End Loader--------------------------------------*/
 }
