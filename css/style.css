@@ -20,6 +20,9 @@ body {
   height: 100%;
   z-index: 2;
   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,8 +32,9 @@ body {
 }
 
 .logo_loader img {
-  width: 75%;
-  padding-left: 45px;
+  width: 70%;
+  object-fit: cover;
+  overflow: hidden;
   margin-bottom: 20px;
   animation: logo 4s ease-out;
   animation-fill-mode: forwards;
@@ -71,8 +75,8 @@ body {
     opacity: 1;
   }
   70% {
-    width: 80%;
-    opacity: 0.33;
+    width: 65%;
+    opacity: 0.5;
     animation-timing-function: ease-in;
   }
   100% {
@@ -83,11 +87,6 @@ body {
 
 @keyframes logo {
   0% {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  70% {
     opacity: 1;
     visibility: visible;
   }
@@ -581,7 +580,9 @@ article h1 /* Titre de l'article */ {
   transform: scale(1);
   transition-property: all;
   transition-duration: 400ms;
+
 }
+
 
 .activites_longue_carte:hover {
   /*transition*/
@@ -650,8 +651,3 @@ a:hover {
   border-bottom: solid 2px #0065fc; /* ligne bleu que pour la nav footer au survole */
 }
 
-@media (max-width: 1920px) {
-  /*--------------------------------Loader--------------------------------------*/
-
-  /*--------------------------------END Loader--------------------------------------*/
-}
